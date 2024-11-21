@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object DetectX</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header Styling */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            gap: 15px;
+        }
+
+        .logo {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 2px solid #005f46;
+            padding: 5px;
+        }
+
+        .title {
+            font-size: 2.5em;
+            color: #005f46;
+            font-weight: bold;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        /* Navigation Buttons */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .nav-button {
+            background-color: #005f46;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: #00735f;
+        }
+
+        /* Main Feature Buttons */
+        .main-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        .main-button {
+            width: 48%;
+            padding: 35px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #005f46;
+            border: none;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .main-button:hover {
+            background-color: #00735f;
+        }
+
+        .main-button img {
+            max-width: 100px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header with Logo and Title -->
+        <div class="header">
+            <img src="C:\Users\ARTHI\OneDrive\Desktop\WhatsApp Image 2024-11-05 at 20.04.25_15dba952.jpg" alt="Object DetectX Logo" class="logo">
+            <h1 class="title">Object DetectX</h1>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons">
+            <button class="nav-button" onclick="location.href='index.html'">Home</button>
+            <button class="nav-button" onclick="location.href='updatestock.html'">Update Stock</button>
+            <button class="nav-button" onclick="location.href='restock_list.html'">Restock List</button>
+            <button class="nav-button" onclick="location.href='contact.html'">Contact</button>
+        </div>
+
+        <!-- Main Feature Buttons -->
+        <div class="main-buttons">
+            <div class="main-button" onclick="location.href='billing.html'">
+                <img src="https://static.vecteezy.com/system/resources/previews/006/692/985/original/trolley-thin-line-add-to-shopping-cart-icon-illustration-for-graphic-and-web-design-free-vector.jpg" alt="Billing Icon">
+                Automatic Billing
+            </div>
+            <div class="main-button" onclick="location.href='cctv.html'">
+                <img src="https://th.bing.com/th/id/OIP.jWf3yCyNLUMT0p68uYpytQAAAA?rs=1&pid=ImgDetMain" alt="CCTV Icon">
+                CCTV
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

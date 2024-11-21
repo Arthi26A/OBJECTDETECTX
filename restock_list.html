@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restock List - Object DetectX</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f8f8f8; padding: 20px; }
+        h2 { color: #005f46; }
+        .restock-buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+        .restock-button { background-color: #f0f0f0; color: #333; width: 100px; height: 100px; border: 1px solid #ddd; border-radius: 5px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 0.9em; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h2>Restock List</h2>
+    <p>Stocks that need to be restocked:</p>
+
+    <!-- Restock Items as Buttons -->
+    <div id="restock-items" class="restock-buttons">
+        <!-- Restock items will be displayed here as buttons -->
+    </div>
+
+    <script>
+        // Load and display restock items from local storage
+        function loadRestockItems() {
+            const items = JSON.parse(localStorage.getItem("restockItems")) || [];
+            const restockItemsContainer = document.getElementById("restock-items");
+
+            if (items.length > 0) {
+                restockItemsContainer.innerHTML = items.map(item => `<div class="restock-button">${item}</div>`).join('');
+            } else {
+                restockItemsContainer.innerHTML = "<p>No items currently need restocking.</p>";
+            }
+        }
+
+        window.onload = loadRestockItems;
+    </script>
+
+</body>
+</html>
